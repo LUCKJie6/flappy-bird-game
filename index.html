@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird 小游戏</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="game-card">
+      <h1>Flappy Bird</h1>
+      <p class="hint">按空格键或点击游戏画面，让小鸟飞起来。</p>
+
+      <div id="game" class="game" aria-label="Flappy Bird 游戏区域">
+        <div id="score" class="score">0</div>
+
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+
+        <div id="pipes" class="pipes"></div>
+
+        <div id="bird" class="bird" aria-hidden="true">
+          <span class="bird-eye"></span>
+          <span class="bird-wing"></span>
+        </div>
+
+        <div class="ground"></div>
+
+        <div id="overlay" class="overlay">
+          <div class="message-box">
+            <h2 id="messageTitle">Flappy Bird</h2>
+            <p id="messageText">按空格键或点击画面开始游戏</p>
+            <div class="mode-buttons" aria-label="选择游戏难度">
+              <button id="easyButton" class="mode-button active" type="button">简单</button>
+              <button id="normalButton" class="mode-button" type="button">普通</button>
+              <button id="hardButton" class="mode-button" type="button">困难</button>
+            </div>
+            <button id="restartButton" class="restart-button" type="button" hidden>重新开始</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
